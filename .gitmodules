@@ -1,0 +1,3 @@
+[submodule "dip"]
+	path = dip
+	url = https://github.com/DmitryUlyanov/deep-image-prior
