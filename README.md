@@ -35,7 +35,7 @@ AUTO-DIP automates the parameter selection for Deep Image Prior denoising for mi
 
     Example config files can be found in [./example_configs](./example_configs) and default parameters are stored in [./default_parameters.yaml](./default_parameters.yaml).
 
-    For detailed parameter descriptions see [./default_parameters.yaml](./default_parameters.yaml) and [./wiki/parameter_description.md](./wiki/parameter_description.md).
+    For detailed parameter descriptions see [./default_parameters.yaml](./default_parameters.yaml) and the [parameter description in the wiki](../../wiki/Parameter-Description).
 
 ## References
 
