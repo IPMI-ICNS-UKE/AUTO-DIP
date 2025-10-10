@@ -1,0 +1,10 @@
+image:
+    path: example_images/FMD_WideField_BPAE_B_1_raw.png    
+    path_gt: example_images/FMD_WideField_BPAE_B_1_gt.png
+transfer_params:
+    microscope: widefield
+    specimen: nucleus
+save_and_log:
+    verbosity: 1
+    mlflow: false
+    save_imgs: true

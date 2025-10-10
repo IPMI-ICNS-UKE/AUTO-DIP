@@ -1,0 +1,1098 @@
+l1_gt:
+  all:
+    all:
+      all:
+        depth: 5
+        num_iter: 2300
+        skip_n11: 0
+        width: asc_to512
+  mic_obj_group:
+    actin_confocal:
+      best:
+        depth: 6
+        num_iter: 1300
+        skip_n11: 4
+        width: '256'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    actin_twophoton:
+      best:
+        depth: 4
+        num_iter: 2800
+        skip_n11: 0
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    actin_widefield:
+      best:
+        depth: 5
+        num_iter: 2500
+        skip_n11: 0
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    mito_confocal:
+      best:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    mito_twophoton:
+      best:
+        depth: 4
+        num_iter: 900
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 900
+        skip_n11: 4
+        width: '128'
+    mito_widefield:
+      best:
+        depth: 8
+        num_iter: 500
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    nucleus_confocal:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    nucleus_twophoton:
+      best:
+        depth: 5
+        num_iter: 2800
+        skip_n11: 0
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    nucleus_widefield:
+      best:
+        depth: 5
+        num_iter: 300
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  microscope_type:
+    confocal:
+      best:
+        depth: 4
+        num_iter: 800
+        skip_n11: 4
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    twophoton:
+      best:
+        depth: 4
+        num_iter: 2700
+        skip_n11: 0
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    widefield:
+      best:
+        depth: 6
+        num_iter: 200
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  object:
+    actin:
+      best:
+        depth: 4
+        num_iter: 1800
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 400
+        skip_n11: 4
+        width: '128'
+    mito:
+      best:
+        depth: 4
+        num_iter: 2300
+        skip_n11: 0
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 600
+        skip_n11: 4
+        width: '128'
+    nucleus:
+      best:
+        depth: 6
+        num_iter: 2800
+        skip_n11: 0
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  orig:
+    orig:
+      orig:
+        depth: 5
+        num_iter: 2900
+        skip_n11: 0
+        width: '128'
+lpips_gt:
+  all:
+    all:
+      all:
+        depth: 8
+        num_iter: 800
+        skip_n11: 4
+        width: '64'
+  mic_obj_group:
+    actin_confocal:
+      best:
+        depth: 6
+        num_iter: 1300
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    actin_twophoton:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 700
+        skip_n11: 4
+        width: '128'
+    actin_widefield:
+      best:
+        depth: 8
+        num_iter: 700
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 300
+        skip_n11: 4
+        width: '128'
+    mito_confocal:
+      best:
+        depth: 5
+        num_iter: 1400
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1400
+        skip_n11: 4
+        width: '128'
+    mito_twophoton:
+      best:
+        depth: 5
+        num_iter: 1600
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 1400
+        skip_n11: 4
+        width: '128'
+    mito_widefield:
+      best:
+        depth: 8
+        num_iter: 400
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    nucleus_confocal:
+      best:
+        depth: 6
+        num_iter: 2100
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 1300
+        skip_n11: 4
+        width: '128'
+    nucleus_twophoton:
+      best:
+        depth: 8
+        num_iter: 1700
+        skip_n11: 4
+        width: '512'
+      orig:
+        depth: 5
+        num_iter: 600
+        skip_n11: 4
+        width: '128'
+    nucleus_widefield:
+      best:
+        depth: 7
+        num_iter: 100
+        skip_n11: 4
+        width: '16'
+      orig:
+        depth: 5
+        num_iter: 100
+        skip_n11: 4
+        width: '128'
+  microscope_type:
+    confocal:
+      best:
+        depth: 5
+        num_iter: 1300
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1300
+        skip_n11: 4
+        width: '128'
+    twophoton:
+      best:
+        depth: 8
+        num_iter: 1900
+        skip_n11: 4
+        width: '512'
+      orig:
+        depth: 5
+        num_iter: 900
+        skip_n11: 4
+        width: '128'
+    widefield:
+      best:
+        depth: 8
+        num_iter: 400
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  object:
+    actin:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 800
+        skip_n11: 4
+        width: '128'
+    mito:
+      best:
+        depth: 6
+        num_iter: 2700
+        skip_n11: 4
+        width: '16'
+      orig:
+        depth: 5
+        num_iter: 1200
+        skip_n11: 4
+        width: '128'
+    nucleus:
+      best:
+        depth: 8
+        num_iter: 300
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  orig:
+    orig:
+      orig:
+        depth: 5
+        num_iter: 900
+        skip_n11: 4
+        width: '128'
+lpips_psnr_gt:
+  all:
+    all:
+      all:
+        depth: 8
+        num_iter: 700
+        skip_n11: 4
+        width: '64'
+  mic_obj_group:
+    actin_confocal:
+      best:
+        depth: 6
+        num_iter: 1300
+        skip_n11: 4
+        width: '256'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    actin_twophoton:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 700
+        skip_n11: 4
+        width: '128'
+    actin_widefield:
+      best:
+        depth: 8
+        num_iter: 500
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    mito_confocal:
+      best:
+        depth: 5
+        num_iter: 1300
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1300
+        skip_n11: 4
+        width: '128'
+    mito_twophoton:
+      best:
+        depth: 4
+        num_iter: 1400
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 1200
+        skip_n11: 4
+        width: '128'
+    mito_widefield:
+      best:
+        depth: 8
+        num_iter: 400
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    nucleus_confocal:
+      best:
+        depth: 4
+        num_iter: 1200
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    nucleus_twophoton:
+      best:
+        depth: 8
+        num_iter: 1700
+        skip_n11: 4
+        width: '512'
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    nucleus_widefield:
+      best:
+        depth: 8
+        num_iter: 300
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  microscope_type:
+    confocal:
+      best:
+        depth: 4
+        num_iter: 1200
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    twophoton:
+      best:
+        depth: 7
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 700
+        skip_n11: 4
+        width: '128'
+    widefield:
+      best:
+        depth: 8
+        num_iter: 400
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  object:
+    actin:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    mito:
+      best:
+        depth: 4
+        num_iter: 2400
+        skip_n11: 4
+        width: '16'
+      orig:
+        depth: 5
+        num_iter: 1200
+        skip_n11: 4
+        width: '128'
+    nucleus:
+      best:
+        depth: 6
+        num_iter: 300
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  orig:
+    orig:
+      orig:
+        depth: 5
+        num_iter: 600
+        skip_n11: 4
+        width: '128'
+mse_gt:
+  all:
+    all:
+      all:
+        depth: 4
+        num_iter: 2100
+        skip_n11: 0
+        width: asc_to512
+  mic_obj_group:
+    actin_confocal:
+      best:
+        depth: 4
+        num_iter: 700
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 800
+        skip_n11: 4
+        width: '128'
+    actin_twophoton:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    actin_widefield:
+      best:
+        depth: 5
+        num_iter: 2600
+        skip_n11: 0
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    mito_confocal:
+      best:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    mito_twophoton:
+      best:
+        depth: 7
+        num_iter: 1500
+        skip_n11: 4
+        width: '256'
+      orig:
+        depth: 5
+        num_iter: 900
+        skip_n11: 4
+        width: '128'
+    mito_widefield:
+      best:
+        depth: 8
+        num_iter: 800
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    nucleus_confocal:
+      best:
+        depth: 4
+        num_iter: 900
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 700
+        skip_n11: 4
+        width: '128'
+    nucleus_twophoton:
+      best:
+        depth: 4
+        num_iter: 2400
+        skip_n11: 0
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 400
+        skip_n11: 4
+        width: '128'
+    nucleus_widefield:
+      best:
+        depth: 7
+        num_iter: 200
+        skip_n11: 4
+        width: '16'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  microscope_type:
+    confocal:
+      best:
+        depth: 4
+        num_iter: 800
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    twophoton:
+      best:
+        depth: 4
+        num_iter: 2300
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    widefield:
+      best:
+        depth: 6
+        num_iter: 200
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  object:
+    actin:
+      best:
+        depth: 4
+        num_iter: 1800
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 300
+        skip_n11: 4
+        width: '128'
+    mito:
+      best:
+        depth: 7
+        num_iter: 1000
+        skip_n11: 4
+        width: '16'
+      orig:
+        depth: 5
+        num_iter: 400
+        skip_n11: 4
+        width: '128'
+    nucleus:
+      best:
+        depth: 6
+        num_iter: 300
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  orig:
+    orig:
+      orig:
+        depth: 5
+        num_iter: 2800
+        skip_n11: 0
+        width: '128'
+psnr_gt:
+  all:
+    all:
+      all:
+        depth: 5
+        num_iter: 400
+        skip_n11: 4
+        width: '32'
+  mic_obj_group:
+    actin_confocal:
+      best:
+        depth: 6
+        num_iter: 1300
+        skip_n11: 4
+        width: '256'
+      orig:
+        depth: 5
+        num_iter: 800
+        skip_n11: 4
+        width: '128'
+    actin_twophoton:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    actin_widefield:
+      best:
+        depth: 5
+        num_iter: 2500
+        skip_n11: 0
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    mito_confocal:
+      best:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    mito_twophoton:
+      best:
+        depth: 4
+        num_iter: 1000
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 900
+        skip_n11: 4
+        width: '128'
+    mito_widefield:
+      best:
+        depth: 8
+        num_iter: 800
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    nucleus_confocal:
+      best:
+        depth: 4
+        num_iter: 800
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 700
+        skip_n11: 4
+        width: '128'
+    nucleus_twophoton:
+      best:
+        depth: 5
+        num_iter: 400
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 300
+        skip_n11: 4
+        width: '128'
+    nucleus_widefield:
+      best:
+        depth: 7
+        num_iter: 200
+        skip_n11: 4
+        width: '16'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  microscope_type:
+    confocal:
+      best:
+        depth: 4
+        num_iter: 900
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    twophoton:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 700
+        skip_n11: 4
+        width: '128'
+    widefield:
+      best:
+        depth: 6
+        num_iter: 300
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  object:
+    actin:
+      best:
+        depth: 4
+        num_iter: 1800
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 400
+        skip_n11: 4
+        width: '128'
+    mito:
+      best:
+        depth: 4
+        num_iter: 900
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 700
+        skip_n11: 4
+        width: '128'
+    nucleus:
+      best:
+        depth: 6
+        num_iter: 300
+        skip_n11: 4
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 300
+        skip_n11: 4
+        width: '128'
+  orig:
+    orig:
+      orig:
+        depth: 5
+        num_iter: 2900
+        skip_n11: 0
+        width: '128'
+ssim_gt:
+  all:
+    all:
+      all:
+        depth: 5
+        num_iter: 2900
+        skip_n11: 0
+        width: asc_to512
+  mic_obj_group:
+    actin_confocal:
+      best:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 1000
+        skip_n11: 4
+        width: '128'
+    actin_twophoton:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 600
+        skip_n11: 4
+        width: '128'
+    actin_widefield:
+      best:
+        depth: 5
+        num_iter: 2300
+        skip_n11: 0
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    mito_confocal:
+      best:
+        depth: 4
+        num_iter: 1200
+        skip_n11: 4
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 1300
+        skip_n11: 4
+        width: '128'
+    mito_twophoton:
+      best:
+        depth: 4
+        num_iter: 1100
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 900
+        skip_n11: 4
+        width: '128'
+    mito_widefield:
+      best:
+        depth: 5
+        num_iter: 1800
+        skip_n11: 0
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+    nucleus_confocal:
+      best:
+        depth: 4
+        num_iter: 800
+        skip_n11: 4
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 1300
+        skip_n11: 4
+        width: '128'
+    nucleus_twophoton:
+      best:
+        depth: 4
+        num_iter: 400
+        skip_n11: 4
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 400
+        skip_n11: 4
+        width: '128'
+    nucleus_widefield:
+      best:
+        depth: 8
+        num_iter: 2300
+        skip_n11: 0
+        width: '32'
+      orig:
+        depth: 5
+        num_iter: 100
+        skip_n11: 4
+        width: '128'
+  microscope_type:
+    confocal:
+      best:
+        depth: 4
+        num_iter: 1100
+        skip_n11: 4
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 1200
+        skip_n11: 4
+        width: '128'
+    twophoton:
+      best:
+        depth: 4
+        num_iter: 2900
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 600
+        skip_n11: 4
+        width: '128'
+    widefield:
+      best:
+        depth: 5
+        num_iter: 2300
+        skip_n11: 0
+        width: '128'
+      orig:
+        depth: 5
+        num_iter: 200
+        skip_n11: 4
+        width: '128'
+  object:
+    actin:
+      best:
+        depth: 4
+        num_iter: 2100
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 400
+        skip_n11: 4
+        width: '128'
+    mito:
+      best:
+        depth: 4
+        num_iter: 2400
+        skip_n11: 0
+        width: asc_to512
+      orig:
+        depth: 5
+        num_iter: 500
+        skip_n11: 4
+        width: '128'
+    nucleus:
+      best:
+        depth: 6
+        num_iter: 2800
+        skip_n11: 0
+        width: '64'
+      orig:
+        depth: 5
+        num_iter: 300
+        skip_n11: 4
+        width: '128'
+  orig:
+    orig:
+      orig:
+        depth: 5
+        num_iter: 2900
+        skip_n11: 0
+        width: '128'

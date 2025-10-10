@@ -1,0 +1,152 @@
+    image:
+        # path to input image (noisy)
+        path: null # str
+        # image and ground truth image are cropped to this region 
+        crop_region: null # list[int]: [left, top, right, bottom]
+        # path to ground truth image 
+        path_gt: null # str
+        # frames that are processed, default(null): all frames
+        frame_range: null # list[int]: [first, last + 1]
+        # number of runs
+        num_runs: 1 # int
+
+    # parameters for time-dependent images 
+    time_series:
+        # use network from previous frame as initialization
+        is_series: false # bool
+        # learning rate after first image
+        learning_rate: 0.001 # float
+        # number of iterations after first image
+        num_iter: 30 # int
+        # apply time-dependent DIP also in the opposite way (last to first frame)
+        back_and_forth: true # bool
+        # normalize the whole time series jointly  
+        joint_normalize: false # bool
+
+    # network parameters
+    net:
+        # network type
+        net_type: skip # options: ResNet, skip, texture_nets, UNet, identity
+        # network input type
+        INPUT: noise # options: noise, meshgrid
+        # parameters that are optimized
+        OPT_OVER: net # str, options: net, down, input or combinations like: net,
+        # regulates noise taht is added to the input image
+        reg_noise_std: 0 # float
+        # how to pad image for convolutions
+        pad: reflection # options: zero, reflection
+        # learning rate
+        learning_rate: 0.01 # float
+        # number of iterations
+        num_iter: 3 # int
+        # number of channels of the input image (usually random image)
+        input_depth: 32 # int
+        # number of channels of the noisy image
+        n_channels: 1 # int
+        # number of channels in each layer of the network (downwards direction)
+        # only for UNet and skip type nets
+        skip_n33d: 128 # int or list[int] with length = num_scales
+        # number of channels in each layer of the network (upwards direction)
+        # only for UNet and skip type nets
+        skip_n33u: 128 
+        # number of channels in the skip connections for each layer of the network 
+        # only for UNet and skip type nets
+        skip_n11: 4 # int or list[int] with length = num_scales
+        # depth of the network
+        num_scales: 8 # int
+        # mode to upsample images (on the way up in the network)
+        # only for UNet and skip type nets
+        upsample_mode: bilinear # options: nearest, bilinear
+        # # mode to downsample images (on the way down in the network)
+        # only for UNet and skip type nets
+        downsample_mode: stride # options: stride, avg, max, lanczos2
+        # activation function
+        act_fun: LeakyReLU # options: LeakyReLU, Swish, ELU, null
+        # calculate a exponential average over the outputs to make it smoother
+        exp_weight: 0 # float in [0, 1], the higher the smoother is the result
+        # number of iterations between checkpoints: save state and reset if output is not improved
+        checkpoint_interval: 100 # int
+
+    # automatically select network depth, network width and the number of iterations based on the input image
+    transfer_params:
+        # method to make the size of input image 512x512, so that it can be compared to the calibration images 
+        representative_img : "input" # str, options: input, centercrop, resize
+        # microscope type that was used to capture the image
+        microscope : None # str or None, options: confocal, twophoton, widefield
+        # specimen in the image
+        specimen : None # str or None, options: actin, nucleus, mito
+
+    # configure superresolution output image 
+    superresolution:
+        # upscaling factor, default 1 = no superresolution 
+        superres_factor: 1 # int
+        # kernel to downsample image for comparison with original
+        downsample_kernel: lanczos2 # options: lanczos2, lanczos3, gauss12, gauss1sq2, lanczos, gauss, box
+
+    # configure the loss
+    loss:
+        # main loss type, TODO: test lpips
+        loss_type_main: mse # options: mse, psf, rl, kl, l1, lpips
+        # optional second loss type for mixed loss
+        loss_type2: null # options: null, mse, psf, rl, kl, l1, lpips
+        # influence of the second loss 
+        loss2_fact: 0.0 # float in [0, 1]
+        # decrease/increase the loss2 factor with every epoch
+        loss2_incr_fact: 0 # float
+        # optional explicit regularizer
+        regularizer: null # options: null, tv, tm
+        # impact of the regularizer 
+        regularizer_fact: 0 # float
+        # decrease/increase the regularizer factor with every epoch
+        regularizer_incr_fact: 0 # float
+
+    # configure the point spread function
+    psf:
+        experimental: false
+        # microscopy type
+        type: widefield # options: confocal, widefield
+        # excitation wave length in nm
+        lambdaEx: 561 # float
+        # emission wave length in nm
+        lambdaEm: 609 # float
+        # numerical aperture of the objective
+        numAper: 1.4 # float
+        # objective total magnification
+        magObj: 100 # int
+        # refractive index of the objective immersion medium
+        rindexObj: 1.518 # float
+        # pixel dimension of the CCD (in the plane of the camera)
+        ccdSize: 6540 # int
+        # optical axis Z sampling or defocusing in nm
+        dz: 0 # float
+        # size of the desired image (specimen view size/pixel dimension)
+        xysize: 384 # int
+        # number of slices desired (Depth view/Z axis sampling)
+        nslices: 1 # int
+        # depth of the specimen under the cover-slip in nm
+        depth: 0 # float
+        # refractive index of the specimen medium
+        rindexSp: 1.518 # float
+        # normalization on the PSF
+        nor: 0 # 0: l-infinity normalization, 1: l-1 normalization
+    
+    # parameters for saving results and logging
+    save_and_log:
+        # save result images in a local directory
+        save_imgs: false # bool
+        # save path
+        save_path : results # str
+        # save loss for every iteration and result image for every checkpoint_interval'th iteration with MLflow
+        mlflow: false # bool
+        # which loss types to log in every iteration
+        mlflow_log_loss_types: [mse, ssim, psnr] # list[str] : options: mse, ssim, psnr, rl, kl, l1, lpips
+        # result image for every checkpoint_interval'th iteration
+        # only saves 8-bit versions of images (even if original is 16 bit)
+        mlflow_log_images: True # bool
+        # name for the experiment in MLflow
+        mlflow_exp_name: AUTO-DIP # str
+        # name for the run in MLflow
+        mlflow_run_name: null # str
+        # verbosity 
+        verbosity: 0 # int: 0 or 1
+
