@@ -22,7 +22,9 @@ AUTO-DIP automates the parameter selection for Deep Image Prior denoising for mi
     ```bash
     #install uv (if not already installed)
     curl -LsSf https://astral.sh/uv/install.sh | sh
+    # install packages
     uv sync
+    # activate environment
     source .venv/bin/activate
     ```
 
