@@ -1,0 +1,13 @@
+microscope_type,specimen,image_quality,fov,timestamp,img_num,avg_num_frames
+widefield,Tubulin,noisy,85,176,2100,1
+widefield,Tubulin,noisy,85,176,2100,2
+widefield,Tubulin,noisy,85,176,2100,3
+widefield,Tubulin,noisy,85,176,2100,4
+widefield,Tubulin,noisy,85,176,2100,6
+widefield,Tubulin,gt,85,176,2100,9
+widefield,Tubulin,noisy,100,176,2475,1
+widefield,Tubulin,noisy,100,176,2475,2
+widefield,Tubulin,noisy,100,176,2475,3
+widefield,Tubulin,noisy,100,176,2475,4
+widefield,Tubulin,noisy,100,176,2475,6
+widefield,Tubulin,gt,100,176,2475,9
