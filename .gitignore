@@ -175,5 +175,10 @@ cython_debug/
 
 
 # Project specific
-dip/
-results/
+results
+dip
+transfer_params/calibration_images.tiff
+transfer_params/umap_py3.12.pkl
+configs
+data/*
+!data/data_selection
