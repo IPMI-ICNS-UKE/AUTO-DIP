@@ -9,7 +9,7 @@ AUTO-DIP automates the parameter selection for Deep Image Prior denoising for mi
 
 1. Clone the repo and initialize submodules by running 
     ```bash
-    git clone --recurse-submodules https://github.com/lin17a/DECO-DIP
+    git clone --recurse-submodules https://github.com/IPMI-ICNS-UKE/DECO-DIP
     ```
     in the command line.
 
@@ -29,8 +29,13 @@ AUTO-DIP automates the parameter selection for Deep Image Prior denoising for mi
     ```
 
 4. Run the program. With the parameter param_path you can specify a yaml file containing the parameters. Default is ./parameters.yaml.
-    ```
+    ```bash
     ./main.py --param_path parameters.yaml
+    ```
+
+    If you want to use MLflow for tracking, start the MLflow server before running AUTO-DIP:
+    ```bash
+    mlflow server --host 127.0.0.1 --port 50000
     ```
 
     If you want to run the program with more than one parameter file, you can specify a folder with parameter files. All yaml files in that folder are processed successively.
