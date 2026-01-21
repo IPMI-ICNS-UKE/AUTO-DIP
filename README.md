@@ -2,7 +2,7 @@
 
 ## About
 
-AUTO-DIP automates the parameter selection for Deep Image Prior denoising for microscopy images. It is based on Deep Image Prior ([DIP](https://github.com/DmitryUlyanov/deep-image-prior)) [1] and does not require any training data. This add-on for DIP chooses parameters automatically based on microscope type, specimen and the image itself.
+AUTO-DIP automates the parameter selection for Deep Image Prior denoising for microscopy images. It is based on Deep Image Prior ([DIP](https://github.com/DmitryUlyanov/deep-image-prior)) [1] and does not require any training data. This add-on for DIP chooses parameters automatically based on microscope type, specimen, and the image itself. The code is associated with our paper(https://doi.org/10.48550/arXiv.2601.12055) [2].
 
 
 ## Usage
@@ -46,5 +46,7 @@ AUTO-DIP automates the parameter selection for Deep Image Prior denoising for mi
 
 ## References
 
-[1] Ulyanov, D., Vedaldi, A., & Lempitsky, V. 2020. "Deep Image Prior". International Journal of Computer Vision 128 (7): 1867–88. https://doi.org/10.1007/s11263-020-01303-4.
-
+[1] Ulyanov D, Vedaldi A, Lempitsky V. Deep Image Prior. International Journal of Computer Vision 2020; 128 (7): 1867–88. https://doi.org/10.1007/s11263-020-01303-4.
+[2] Meyer L, Wissel F, Knopp T, Pfefferle S, Fliegert R, Sandmann M, Uebler L, Möckl F, Diercks B-P, Lohr D, Werner R. Automating Parameter Selection in Deep Image Prior for Fluorescence
+ Microscopy Image Denoising via Similarity-Based Parameter Transfer. https://doi.org/10.48550/arXiv.2601.12055. 
+ 
